@@ -308,7 +308,7 @@ form fieldset p {
     overflow-y: auto;
     pointer-events: none;
     transform: translateY(-100%);
-    transition: opacity 0.3s, transform: 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
     z-index: 999;
   }
 
