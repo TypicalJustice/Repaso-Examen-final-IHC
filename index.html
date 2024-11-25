@@ -1,11 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Best Games Perú</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img height="70" width="70" src="img/palanca-de-mando.png" alt="" />
+      </a>
+      <!--Botón Menú Responsive-Open-->
+      <button class="open-menu" aria-label="Abrir-menu">
+        <img src="img/menu horizontal.png" alt="" />
+      </button>
+      <ul class="menu-horizontal">
+        <!--Botón Menú Responsive-Close-->
+        <button class="close-menu" aria-label="Cerrar-menu">
+          <img src="img/eliminar.png" alt="" />
+        </button>
+
+        <li><a href="">¿Quienes Somos?</a></li>
+        <li>
+          <a href="">Consolas</a>
+          <ul class="menu-vertical">
+            <li><a href="">PS5</a></li>
+            <li><a href="">PS4</a></li>
+            <li><a href="">Nintendo Switch</a></li>
+            <li><a href="">Xbox Series X</a></li>
+            <li><a href="">Xbox Series S</a></li>
+          </ul>
+        </li>
+        <li><a href="">Juegos</a></li>
+        <li><a href="">Mandos</a></li>
+        <li><a href="">Accesorios</a></li>
+        <li><a href="#Section_Insc">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <section class="adn-upc-section">
+      <div class="content-adn">
+        <div class="text-video">
+          <h2>
+            Te presentamos el trailer oficial de GTA 6, el juego más esperado
+            por muchos gamers. Tuvieron que pasar más de 10 años para que
+            podamos ver algo de esta magnitud.
+          </h2>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/QdBZY2fkU-0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+        <div class="adn-info">
+          <h2>Best Games Perú siempre se pone en la piel del Gamer</h2>
+          <h4>
+            Productos de calidad + Tendencias + Precios bajos + Variedad +
+            Atención personalizada
+          </h4>
+          <p>
+            Best Games Perú es una plataforma en línea creada para ofrecer a los
+            fanáticos de los videojuegos una experiencia de compra que vaya más
+            allá de lo tradicional. Nos especializamos en poner a disposición de
+            nuestros clientes los títulos más recientes, los mandos más
+            innovadores, y una amplia gama de accesorios de última generación
+            que potencian cada partida y elevan el nivel de juego. Nuestro
+            compromiso es ser la opción preferida para quienes buscan productos
+            de calidad y un servicio de primer nivel.
+          </p>
+          <p>
+            Sabemos que la comunidad gamer valora no solo la variedad y la
+            disponibilidad de productos, sino también la confianza y la
+            seguridad al momento de comprar. Por eso, en Best Games Perú, nos
+            esforzamos por ofrecer una plataforma intuitiva, con un proceso de
+            compra sencillo y un servicio al cliente siempre dispuesto a
+            resolver cualquier consulta. A través de promociones por
+            festividades, descuentos y contenido exclusivo, buscamos no solo
+            atraer nuevos compradores, sino también construir relaciones
+            duraderas con quienes nos eligen.
+          </p>
+          <p>
+            Nuestra visión es convertirnos en el destino de referencia para
+            gamers en Perú, un lugar donde la pasión por los videojuegos se
+            encuentra con un servicio de excelencia. Desde los jugadores
+            casuales hasta los más competitivos, todos encuentran en Best Games
+            Perú una experiencia pensada para satisfacer sus necesidades y
+            expectativas, haciendo que cada compra no sea solo una transacción,
+            sino una parte esencial de su viaje en el mundo de los videojuegos.
+            <b
+              >¡Únete a nosotros y descubre todo lo que tenemos preparado para
+              ti!</b
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--SECTION FORMULARIO-->
+    <section class="Inscripcion-Section">
+      <div id="Section_Insc">
+        <div class="Container-Inscripcion">
+          <form name="frm" method="post" action="">
+            <fieldset id="form">
+              <legend>Formulario para consultas</legend>
+              <ul>
+                <li>
+                  <label>Nombres:</label
+                  ><input type="text" name="fname" size="30" />
+                </li>
+                <li>
+                  <label>Apellidos:</label
+                  ><input type="text" name="flastname" size="30" />
+                </li>
+                <li>
+                  <label>Correo electrónico:</label
+                  ><input type="text" name="femail" size="30" />
+                </li>
+                <li>
+                  <label>Celular:</label
+                  ><input type="text" name="fphone" size="30" />
+                </li>
+                <li>
+                  <label>Sexo:</label>
+                  <input type="radio" name="fsex" value="H" />Hombre
+                  <input type="radio" name="fsex" value="M" />Mujer
+                  <input type="radio" name="fsex" value="S" />Sin preferencia
+                </li>
+                <li>
+                  <label for="">Tipo de consulta:</label>
+                  <select>
+                    <option>Promociones y descuentos</option>
+                    <option>Envíos y tiempos de entrega</option>
+                    <option>Devoluciones y cambios</option>
+                    <option>Soporte técnico y garantías</option>
+                  </select>
+                </li>
+                <li>
+                  <label>Intereses:</label>
+                  <input type="checkbox" name="product_interest" />Juegos
+                  <input type="checkbox" name="product_interest" />Mandos y
+                  acessorios
+                  <input type="checkbox" name="product_interest" />Consolas
+                  <input type="checkbox" name="product_interest" />Realidad
+                  aumentada
+                  <input type="checkbox" name="product_interest" />Giftcards
+                </li>
+                <li>
+                  <label style="display: block; margin-bottom: 10px"
+                    >Detalle de la consulta:</label
+                  >
+                  <textarea
+                    name="detalle_consulta"
+                    rows="10"
+                    cols="50"
+                    placeholder="Escribe aquí tu consulta..."
+                  ></textarea>
+                </li>
+              </ul>
+              <p><input type="submit" class="btn-frm-insc" value="Enviar" /></p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="Container_SN">
+      <ul class="Banner_SN">
+        <li>
+          <img src="iconos/facebook.png" width="32" height="32" />
+          <p>
+            <a href="Pagina Oficial" target="_blank"
+              >Síguenos en<br />Facebook</a
+            >
+          </p>
+        </li>
+        <li>
+          <img src="iconos/instagram.png" width="32" height="32" />
+          <p>
+            <a href="Pagina Oficial" target="_blank"
+              >Síguenos en<br />Instagram</a
+            >
+          </p>
+        </li>
+        <li>
+          <img src="iconos/whatsapp.png" width="32" height="32" />
+          <p>
+            <a href="Pagina Oficial" target="_blank"
+              >Escríbenos a nuestro<br />Whatsapp</a
+            >
+          </p>
+        </li>
+        <li>
+          <img src="iconos/tiktok.png" width="32" height="32" />
+          <p>
+            <a href="Pagina Oficial" target="_blank">Síguenos en<br />TikTok</a>
+          </p>
+        </li>
+        <li>
+          <img src="iconos/twitter.png" width="32" height="32" />
+          <p>
+            <a href="Pagina Oficial" target="_blank"
+              >Síguenos en<br />Twitter</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <!-- PIE DE PAGINA -->
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Nosotros</h3>
+          <ul>
+            <li><a href="#">¿Quienes Somos?</a></li>
+            <li><a href="#">Contáctanos al 987654321</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Ubícanos</h3>
+          <ul>
+            <li>
+              <a href="https://maps.app.goo.gl/PPMBL53VYHM2dYBL9"
+                >Av. Aviación 5095, Santiago de Surco 15038</a
+              >
+            </li>
+            <li><a href="#">Lunes a Sábado 8:00 hrs - 20:00 hrs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Consolas</h3>
+          <ul>
+            <li><a href="#">PS5</a></li>
+            <li><a href="#">Xbox Series X/S</a></li>
+            <li><a href="#">PS4 Pro</a></li>
+            <li><a href="#">Nintendo Switch</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li>
+              <a
+                href="https://cdn.www.gob.pe/uploads/document/file/272360/Ley%20N%C2%BA%2029733.pdf.pdf"
+                target="_new"
+                >Política de protección de datos personales</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://cdn.www.gob.pe/uploads/document/file/1412572/Poli%CC%81tica%20de%20Privacidad%20GOB.PE..pdf"
+                target="_new"
+                >Política de privacidad</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://cdn.www.gob.pe/uploads/document/file/3620406/PS05.02.02%20-%20Ficha%20de%20Procedimiento%20Gesti%C3%B3n%20de%20derechos%20ARCO%20y%20derecho%20de%20informaci%C3%B3n%20-%20versi%C3%B3n%2002.pdf"
+                target="_new"
+                >Derechos ARCO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+      <div class="footer-bottom">
+        <p>Best Games Perú 2024. Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
 </html>

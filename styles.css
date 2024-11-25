@@ -1,0 +1,364 @@
+.open-menu,
+.close-menu {
+  display: none;
+}
+/*HEADER*/
+.topheader {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #ab3000;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.menu-horizontal li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-horizontal li a:hover {
+  color: #357fff;
+}
+
+.menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: #ab3000;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li a:hover {
+  color: white;
+}
+
+.menu-vertical li:hover {
+  background-color: #34d840;
+}
+/*Section.video*/
+
+.adn-upc-section {
+  background-color: #ab3000;
+  padding: 100px;
+}
+
+.content-adn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.text-video {
+  width: 45%;
+}
+
+.text-video h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.adn-info {
+  width: 50%;
+}
+
+.adn-info h2 {
+  color: #34d840;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.adn-info h4 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.adn-info p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.Inscripcion-Section {
+  background-color: #2bdd99;
+  padding: 40px 20px;
+}
+
+.Container-Inscripcion {
+  width: 55%;
+  margin: 0 auto;
+  background-color: #7a7cff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form fieldset {
+  border: 2px solid #0000ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+form ul {
+  list-style: none;
+  padding-left: 0;
+  color: white;
+}
+
+form li {
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+  width: 160px;
+  display: inline-block;
+}
+form input[type="text"],
+form textarea,
+form select {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #39f605;
+  border-radius: 5px;
+}
+form input[type="radio"] {
+  margin-left: 10px;
+}
+form input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+form .btn-frm-insc {
+  background-color: #2bdd99;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  font-size: 1rem;
+  cursor: pointer;
+}
+form .btn-frm-insc:hover {
+  background-color: #ab3000;
+  color: #7a7cff;
+}
+
+form fieldset p {
+  text-align: center;
+}
+/*PIE*/
+.footer-section {
+  background-color: #ab3000;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  width: 20%;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #7a7cff;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.footer-column ul {
+  list-style-type: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #cdcbc2;
+  font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+  color: #7a7cff;
+  text-decoration: none;
+}
+
+.footer-line {
+  border: 0;
+  height: 2px;
+  background-color: #7a7cff;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 1.5rem;
+  color: #2bdd99;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+/* Redes Sociales */
+.Container_SN {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100;
+}
+.Banner_SN li {
+  list-style-type: none;
+  opacity: 1;
+  color: blue;
+  height: 43px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.Banner_SN li:hover {
+  margin-left: -115px;
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Añade sombra */
+}
+.Banner_SN li img {
+  float: left;
+  margin: 5px 5px;
+  margin-right: 5px;
+}
+.Banner_SN li p {
+  padding-top: 5px;
+  margin: 0;
+  line-height: 16px;
+  font-size: 10px;
+}
+.Banner_SN li p a {
+  font-size: 12px; /* Tamaño más grande */
+  font-weight: bold; /* Negrita */
+  color: #003366; /* Azul oscuro */
+  text-decoration: none;
+}
+/*Configuracion Responsive*/
+@media (max-width: 768px) {
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #ab3000;
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform: 0.3s;
+    z-index: 999;
+  }
+
+  .menu-horizontal.menu_opened{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal li{
+    padding: 0;
+  }
+
+  .menu-horizontal a{
+    color: black;
+    line-height: 70px;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  .menu-horizontal a:hover, .menu-horizontal a.selected {
+    color: #7a7cff;
+    text-decoration: underline;
+  }
+
+  .menu-horizontal a:focus{
+    outline: 2px dashed #0000ff;
+    outline-offset: 4px;
+  }
+
+  .menu-horizontal a::after{
+    content: none;
+  }
+
+  .open-menu,.close-menu{
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 30px;
+  }
+  .close-menu{
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible){
+    outline: none;
+  }
+
+}
